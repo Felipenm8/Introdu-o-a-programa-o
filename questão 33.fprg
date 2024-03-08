@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-08 10:44:46 "/>
+        <attribute name="created" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDg7IjA5OjU4OjM2ICI7MjM3Mw=="/>
+        <attribute name="edited" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDg7IjEwOjQ0OjQ2ICI7MTsyNDY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario, imposto" type="Real" array="False" size=""/>
+            <input variable="salario"/>
+            <if expression="salario&lt;1903.99">
+                <then>
+                    <assign variable="salario" expression="salario*0"/>
+                </then>
+                <else>
+                    <if expression="salario&lt;2826.65">
+                        <then>
+                            <assign variable="salario" expression="salario* 0.075"/>
+                        </then>
+                        <else>
+                            <if expression="salario&lt;3751.04">
+                                <then>
+                                    <assign variable="salario" expression="salario*0.15"/>
+                                </then>
+                                <else>
+                                    <if expression="salario&lt;4464.67">
+                                        <then>
+                                            <assign variable="salario" expression="salario*0.225"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="salario" expression="salario*0.275"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;o seu imposto a pagar &#233;:&quot; &amp; salario &amp; &quot;R$&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
