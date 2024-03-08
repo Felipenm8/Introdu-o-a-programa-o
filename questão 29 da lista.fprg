@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-08 08:22:20 "/>
+        <attribute name="created" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDg7IjA3OjQ3OjI2ICI7MjM2OA=="/>
+        <attribute name="edited" value="QWx1bm87QUxVTk9JRkJBOzIwMjQtMDMtMDg7IjA4OjIyOjIwICI7MTsyNDY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="m, c" type="Real" array="False" size=""/>
+            <output expression="&quot;infotme a altura na escala de merc&#250;rio&quot;" newline="True"/>
+            <input variable="m"/>
+            <assign variable="c" expression="5*m-2"/>
+            <output expression="&quot;a sua temperatura &#233;&quot; &amp; c &amp; &quot; graus Celsius&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
