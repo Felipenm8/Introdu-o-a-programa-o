@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-21 08:59:39 "/>
+        <attribute name="created" value="cGM7REVTS1RPUC00U0gzMVQyOzIwMjQtMDMtMjE7IjA3OjE5OjM0ICI7MjQyOA=="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC00U0gzMVQyOzIwMjQtMDMtMjE7IjA4OjU5OjM5ICI7MTsyNTQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario, imposto" type="Real" array="False" size=""/>
+            <input variable="salario"/>
+            <if expression="salario&lt;1903.99">
+                <then>
+                    <output expression="&quot;isento&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="salario&lt;2826.66">
+                        <then>
+                            <assign variable="imposto" expression="salario*0.075"/>
+                        </then>
+                        <else>
+                            <if expression="salario&lt;3751.05">
+                                <then>
+                                    <assign variable="imposto" expression="salario*0.15"/>
+                                </then>
+                                <else>
+                                    <if expression="salario&lt;4464.68">
+                                        <then>
+                                            <assign variable="imposto" expression="salario*0.255"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="imposto" expression="salario*0.275"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                            <output expression="imposto" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

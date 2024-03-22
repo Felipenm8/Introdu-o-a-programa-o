@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pc"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-21 07:19:26 "/>
+        <attribute name="created" value="cGM7REVTS1RPUC00U0gzMVQyOzIwMjQtMDMtMjE7IjA3OjEwOjUzICI7MjQyMA=="/>
+        <attribute name="edited" value="cGM7REVTS1RPUC00U0gzMVQyOzIwMjQtMDMtMjE7IjA3OjE5OjI2ICI7MzsyNTM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="a" expression="(sqrt(b^2+c^2))*100"/>
+            <output expression="a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
